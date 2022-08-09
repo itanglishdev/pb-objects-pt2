@@ -35,3 +35,12 @@ function calcMaxScrabbleScore() {
 }
 
 console.log(calcMaxScrabbleScore());
+
+// EX 3
+
+function isEmptyObject(object) {
+  if (Object.keys(object).length === 0) {
+    return true
+  } return false
+}
+console.log(isEmptyObject({}));
