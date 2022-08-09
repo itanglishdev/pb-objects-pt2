@@ -79,3 +79,26 @@ function freeShipping(order) {
 }
 
 console.log(freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 }));
+
+// EX 6
+
+const programming = {
+  languages: ["JavaScript", "Python", "Ruby"],
+  isChallenging: true,
+  isRewarding: true,
+  difficulty: 8,
+  jokes: "https://www.quora.com/What-are-the-most-popular-computer-programming-jokes"
+};
+
+programming.languages.push("GO")
+programming.difficulty = 7
+delete programming.jokes
+programming.isFun = true
+
+for (let i = 0; i < programming.languages.length; i++) {
+  console.log(programming.languages[i]);
+}
+
+
+console.log(Object.keys(programming));
+console.log(Object.values(programming));
