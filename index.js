@@ -61,3 +61,21 @@ function numberOfOccurrences(string) {
 }
 
 console.log(numberOfOccurrences("taataat"));
+
+// Ex 5
+
+function freeShipping(order) {
+  let sumUp = 0;
+  const arrayOfValues = []
+  arrayOfValues.push(Object.values(order))
+  for (let i = 0; i < arrayOfValues.length; i++) {
+    sumUp += arrayOfValues[i]
+
+  }
+  if (sumUp > 50) {
+    return true
+  } return false
+
+}
+
+console.log(freeShipping({ "Wool": 13.99, "Knitting Needles": 15.50, "Bag": 13.99 }));
