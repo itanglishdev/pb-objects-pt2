@@ -1,3 +1,5 @@
+'use strict';
+
 // EX 1
 const newObject = {
   min: 10,
@@ -51,7 +53,7 @@ const emptyObj = {}
 
 function numberOfOccurrences(string) {
   for (let i = 0; i < string.length; i++) {
-    counter = 1
+    let counter = 1
     for (let j = 1; j < string.length; j++) {
       if (string[i] === string[j]) {
         counter++
@@ -104,3 +106,6 @@ console.log(Object.keys(programming));
 console.log(Object.values(programming));
 
 if (programming.isChallenging && programming.isRewarding) { console.log(`Learning the programming languages ${programming.languages[0]}, ${programming.languages[1]}, ${programming.languages[2]}, ${programming.languages[0]}, ${programming.languages[3]} is rewarding and challenging `) }
+
+// 
+console.log();
