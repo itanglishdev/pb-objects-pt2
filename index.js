@@ -102,3 +102,5 @@ for (let i = 0; i < programming.languages.length; i++) {
 
 console.log(Object.keys(programming));
 console.log(Object.values(programming));
+
+if (programming.isChallenging && programming.isRewarding) { console.log(`Learning the programming languages ${programming.languages[0]}, ${programming.languages[1]}, ${programming.languages[2]}, ${programming.languages[0]}, ${programming.languages[3]} is rewarding and challenging `) }
