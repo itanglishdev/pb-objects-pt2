@@ -44,3 +44,20 @@ function isEmptyObject(object) {
   } return false
 }
 console.log(isEmptyObject({}));
+
+// Ex 4
+
+const emptyObj = {}
+
+function numberOfOccurrences(string) {
+  for (let i = 0; i < string.length; i++) {
+    counter = 1
+    for (let j = 1; j < string.length; j++) {
+      if (string[i] === string[j]) {
+        counter++
+      }
+    } emptyObj[string[i]] = counter
+  } return emptyObj
+}
+
+console.log(numberOfOccurrences("taataat"));
