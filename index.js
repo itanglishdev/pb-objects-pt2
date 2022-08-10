@@ -64,6 +64,21 @@ function numberOfOccurrences(string) {
 
 console.log(numberOfOccurrences("taataat"));
 
+function countLetters(str) {
+  const strToArr = str.split("");
+  const letterCount = {}
+
+  for (let i = 0; i < strToArr.length; i++) {
+    if (letterCount.hasOwnProperty(strToArr[i])) {
+      letterCount[strToArr[i]] = 1;
+    } else {
+      letterCount[strToArr[i]] = 1
+    }
+
+  } return letterCount
+}
+console.log(countLetters("asdfagfag"));
+
 // Ex 5
 
 function freeShipping(order) {
@@ -102,8 +117,17 @@ for (let i = 0; i < programming.languages.length; i++) {
 }
 
 
-console.log(Object.keys(programming));
-console.log(Object.values(programming));
+for (const key in programming) {
+  console.log(key);
+}
+
+for (const values in programming) {
+  console.log(values);
+}
+
+// console.log(Object.keys(programming));
+// console.log(Object.values(programming));
+
 
 if (programming.isChallenging && programming.isRewarding) { console.log(`Learning the programming languages ${programming.languages[0]}, ${programming.languages[1]}, ${programming.languages[2]}, ${programming.languages[0]}, ${programming.languages[3]} is rewarding and challenging `) }
 
