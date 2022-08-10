@@ -129,6 +129,6 @@ for (const values in programming) {
 // console.log(Object.values(programming));
 
 
-if (programming.isChallenging && programming.isRewarding) { console.log(`Learning the programming languages ${programming.languages[0]}, ${programming.languages[1]}, ${programming.languages[2]}, ${programming.languages[0]}, ${programming.languages[3]} is rewarding and challenging `) }
+if (programming.isChallenging && programming.isRewarding) { console.log(`Learning the programming languages ${programming.languages} is rewarding and challenging `) }
 
 //Not sure what the question is asking, but if you console log an object without calling it, nothing happens 
